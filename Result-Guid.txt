@@ -1,0 +1,19 @@
+================================================================
+
+Benchmarking Guid with size 10:
+
+List (LINQ): 1341 ms
+List (foreach): 455 ms
+List (for): 454 ms
+Dictionary: 247 ms
+
+================================================================
+
+Benchmarking Guid with size 1:
+
+List (LINQ): 120 ms
+List (foreach): 31 ms
+List (for): 22 ms
+Dictionary: 20 ms
+
+================================================================
