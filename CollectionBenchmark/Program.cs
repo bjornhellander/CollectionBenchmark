@@ -7,15 +7,15 @@ namespace CollectionBenchmark
         static void Main()
         {
             var type = "string";
-            var size = 10;
+            var collection_size = 10;
             var iterations = 1000000;
 
-            Console.WriteLine($"Benchmarking {type}:");
+            Console.WriteLine($"Benchmarking {type} with size {collection_size}:");
             Console.WriteLine();
 
             if (type == "int")
             {
-                var list = CreateList(size);
+                var list = CreateList(collection_size);
                 var keys = list.Select(x => x.Int).ToArray();
 
                 ShowExecutionTime("List (LINQ)", key => SearchForIntInListUsingLinq(list, key), iterations, keys);
@@ -29,7 +29,7 @@ namespace CollectionBenchmark
             }
             else if (type == "string")
             {
-                var list = CreateList(size);
+                var list = CreateList(collection_size);
                 var keys = list.Select(x => x.String).ToArray();
 
                 ShowExecutionTime("List (LINQ)", key => SearchForStringInListUsingLinq(list, key), iterations, keys);
@@ -43,7 +43,7 @@ namespace CollectionBenchmark
             }
             else if (type == "Guid")
             {
-                var list = CreateList(size);
+                var list = CreateList(collection_size);
                 var keys = list.Select(x => x.Guid).ToArray();
 
                 ShowExecutionTime("List (LINQ)", key => SearchForGuidInListUsingLinq(list, key), iterations, keys);

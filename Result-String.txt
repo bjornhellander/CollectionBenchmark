@@ -1,0 +1,37 @@
+================================================================
+
+Benchmarking string with size 50:
+
+List (LINQ): 21419 ms
+List (foreach): 8334 ms
+List (for): 8169 ms
+Dictionary: 1568 ms
+
+================================================================
+
+Benchmarking string with size 10:
+
+List (LINQ): 1670 ms
+List (foreach): 557 ms
+List (for): 539 ms
+Dictionary: 365 ms
+
+================================================================
+
+Benchmarking string with size 5:
+
+List (LINQ): 609 ms
+List (foreach): 275 ms
+List (for): 228 ms
+Dictionary: 202 ms
+
+================================================================
+
+Benchmarking string with size 4:
+
+List (LINQ): 387 ms
+List (foreach): 192 ms
+List (for): 140 ms
+Dictionary: 149 ms
+
+================================================================

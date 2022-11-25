@@ -1,0 +1,37 @@
+================================================================
+
+Benchmarking int with size 50:
+
+List (LINQ): 18531 ms
+List (foreach): 1868 ms
+List (for): 1767 ms
+Dictionary: 429 ms
+
+================================================================
+
+Benchmarking int with size 10:
+
+List (LINQ): 1185 ms
+List (foreach): 272 ms
+List (for): 255 ms
+Dictionary: 126 ms
+
+================================================================
+
+Benchmarking int with size 2:
+
+List (LINQ): 210 ms
+List (foreach): 47 ms
+List (for): 35 ms
+Dictionary: 22 ms
+
+================================================================
+
+Benchmarking int with size 1:
+
+List (LINQ): 94 ms
+List (foreach): 17 ms
+List (for): 15 ms
+Dictionary: 19 ms
+
+================================================================
